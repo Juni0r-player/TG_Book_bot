@@ -1,6 +1,4 @@
-# Standard Readme
-
-![<Телеграм бот - для чтения книг>]
+# Телеграм бот - для чтения книг
 
 A standard style for README files
 
