@@ -1,119 +1,60 @@
-# Standard Readme
+## Телеграм бот для чтения книг.
 
-![<Телеграм бот - для чтения книг>]
+## Зачем?
+Чтобы можно было читать книгу прямо в телеграм-боте и попрактиковаться в работе с инлайн-кнопками
 
-A standard style for README files
-
-Your README file is normally the first entry point to your code. It should tell people why they should use your module, how they can install it, and how they can use it. Standardizing how you write your README makes creating and maintaining your READMEs easier. Great documentation takes work!
-
-This repository contains:
-
-1. [The specification](spec.md) for how a standard README should look.
-2. A link to [a linter](https://github.com/RichardLitt/standard-readme-preset) you can use to keep your README maintained ([work in progress](https://github.com/RichardLitt/standard-readme/issues/5)).
-3. A link to [a generator](https://github.com/RichardLitt/generator-standard-readme) you can use to create standard READMEs.
-4. [A badge](#badge) to point to this spec.
-5. [Examples of standard READMEs](example-readmes/) - such as this file you are reading.
-
-Standard Readme is designed for open source libraries. Although it’s [historically](#background) made for Node and npm projects, it also applies to libraries in other languages and package managers.
+Что бот должен уметь?
+Загружать страницы книги из хранилища и присылать их в чат в виде сообщений с кнопками
+Сохранять страницу, на которой остановился пользователь и загружать книгу на этом месте
+Переходить в начало книги
+Дополнительный функционал
+Сохранять закладки - страницы книги, которые пользователь пожелал сохранить
+Редактировать закладки (удалять ненужные)
+Описание взаимодействия с ботом
+Пользователь отправляет команду /start боту (или стартует его, найдя в поиске)
+Бот приветствует пользователя, сообщает, что пользователь может прочитать книгу прямо в чате с ботом, а также предлагает пользователю посмотреть список доступных команд, отправив команду /help
 
 
-## Table of Contents
-
-- [Background](#background)
-- [Install](#install)
-- [Usage](#usage)
-	- [Generator](#generator)
-- [Badge](#badge)
-- [Example Readmes](#example-readmes)
-- [Related Efforts](#related-efforts)
-- [Maintainers](#maintainers)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Background
-
-Standard Readme started with the issue originally posed by [@maxogden](https://github.com/maxogden) over at [feross/standard](https://github.com/feross/standard) in [this issue](https://github.com/feross/standard/issues/141), about whether or not a tool to standardize readmes would be useful. A lot of that discussion ended up in [zcei's standard-readme](https://github.com/zcei/standard-readme/issues/1) repository. While working on maintaining the [IPFS](https://github.com/ipfs) repositories, I needed a way to standardize Readmes across that organization. This specification started as a result of that.
-
-> Your documentation is complete when someone can use your module without ever
-having to look at its code. This is very important. This makes it possible for
-you to separate your module's documented interface from its internal
-implementation (guts). This is good because it means that you are free to
-change the module's internals as long as the interface remains the same.
-
-> Remember: the documentation, not the code, defines what a module does.
-
-~ [Ken Williams, Perl Hackers](http://mathforum.org/ken/perl_modules.html#document)
-
-Writing READMEs is way too hard, and keeping them maintained is difficult. By offloading this process - making writing easier, making editing easier, making it clear whether or not an edit is up to spec or not - you can spend less time worrying about whether or not your initial documentation is good, and spend more time writing and using code.
-
-By having a standard, users can spend less time searching for the information they want. They can also build tools to gather search terms from descriptions, to automatically run example code, to check licensing, and so on.
-
-The goals for this repository are:
-
-1. A well defined **specification**. This can be found in the [Spec document](spec.md). It is a constant work in progress; please open issues to discuss changes.
-2. **An example README**. This Readme is fully standard-readme compliant, and there are more examples in the `example-readmes` folder.
-3. A **linter** that can be used to look at errors in a given Readme. Please refer to the [tracking issue](https://github.com/RichardLitt/standard-readme/issues/5).
-4. A **generator** that can be used to quickly scaffold out new READMEs. See [generator-standard-readme](https://github.com/RichardLitt/generator-standard-readme).
-5. A **compliant badge** for users. See [the badge](#badge).
-
-## Install
-
-This project uses [node](http://nodejs.org) and [npm](https://npmjs.com). Go check them out if you don't have them locally installed.
-
-```sh
-$ npm install --global standard-readme-spec
-```
-
-## Usage
-
-This is only a documentation package. You can print out [spec.md](spec.md) to your console:
-
-```sh
-$ standard-readme-spec
-# Prints out the standard-readme spec
-```
-
-### Generator
-
-To use the generator, look at [generator-standard-readme](https://github.com/RichardLitt/generator-standard-readme). There is a global executable to run the generator in that package, aliased as `standard-readme`.
-
-## Badge
-
-If your README is compliant with Standard-Readme and you're on GitHub, it would be great if you could add the badge. This allows people to link back to this Spec, and helps adoption of the README. The badge is **not required**.
-
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
-
-To add in Markdown format, use this code:
-
-```
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
-```
-
-## Example Readmes
-
-To see how the specification has been applied, see the [example-readmes](example-readmes/).
-
-## Related Efforts
-
-- [Art of Readme](https://github.com/noffle/art-of-readme) - 💌 Learn the art of writing quality READMEs.
-- [open-source-template](https://github.com/davidbgk/open-source-template/) - A README template to encourage open-source contributions.
-
-## Maintainers
-
-[@RichardLitt](https://github.com/RichardLitt).
-
-## Contributing
-
-Feel free to dive in! [Open an issue](https://github.com/RichardLitt/standard-readme/issues/new) or submit PRs.
-
-Standard Readme follows the [Contributor Covenant](http://contributor-covenant.org/version/1/3/0/) Code of Conduct.
-
-### Contributors
-
-This project exists thanks to all the people who contribute.
-<a href="https://github.com/RichardLitt/standard-readme/graphs/contributors"><img src="https://opencollective.com/standard-readme/contributors.svg?width=890&button=false" /></a>
+На этом этапе пользователь может совершить 5 действий:
+Отправить в чат команду /help
+Отправить в чат команду /beginning
+Отправить в чат команду /continue
+Отправить в чат команду /bookmarks
+Отправить в чат любое другое сообщение
+Пользователь отправляет в чат команду /help:
+Бот присылает пользователю список доступных команд, сообщает о том, что можно сохранять страницы книги в закладки и желает приятного чтения
 
 
-## License
+Пользователь отправляет в чат команду /beginning:
+Бот отправляет в чат первую страницу книги и 3 инлайн-кнопки (назад, текущий номер страницы и вперед)
 
-[MIT](LICENSE) © Richard Littauer
+
+Соответственно, при взаимодействии с сообщением-книгой пользователь может:
+Нажать на кнопку "Вперед" и тогда бот загрузит следующую страницу книги, если текущая страница не последняя. Номер текущей страницы на кнопке увеличится на 1. А если текущая страница последняя в книге, то ничего не изменится.
+Нажать на кнопку с текущим номером страницы и тогда бот сохранит эту страницу в закладки, сообщив пользователю об этом
+Нажать на кнопку "Назад" и тогда бот загрузит предыдущую страницу книги, если текущая страница не первая. Номер текущей страницы на кнопке уменьшится на 1. А если текущая страница первая, то ничего не изменится
+
+
+Пользователь отправляет в чат команду /continue:
+Бот отправляет в чат страницу книги, на которой пользователь остановил чтение во время последнего взаимодействия с сообщением-книгой.
+Если пользователь еще не начинал читать книгу - бот отправляет сообщение с первой страницей книги
+Пользователь отправляет в чат команду /bookmarks:
+Если пользователь сохранял закладки ранее, то бот отправляет в чат список сохраненных закладок в виде инлайн-кнопок, а также инлайн-кнопки "Редактировать" и "Отменить"
+
+
+Если пользователь нажимает на кнопку с закладкой - бот отправляет сообщение с книгой на той странице, куда указывала закладка
+Если пользователь нажимает на кнопку "Отменить", то бот убирает список закладок и отправляет сообщение с предложением продолжить чтение, отправив команду /continue
+
+
+Если пользователь нажимает на кнопку "Редактировать", то бот отправляет список сохраненных закладок в виде инлайн-кнопок с пометкой на удаление, а также инлайн-кнопку "Отменить"
+
+
+Если пользователь нажимает на закладку с пометкой на удаление - она пропадает из списка редактируемых закладок
+Если список содержит хотя бы одну закладку и пользователь нажимает "Отменить" - бот убирает сообщение со списком редактируемых закладок и меняет его на сообщение с предложением продолжить чтение, отправив команду /continue
+
+
+Если в списке, после очередного удаления закладки, не остается ни одной закладки - бот сообщает пользователю, что у него нет ни одной закладки и предлагает продолжить чтение книги, отправив команду /continue
+
+
+Пользователь отправляет в чат любое другое сообщение:
+Бот как-то реагирует на такое сообщение, например, эхом
